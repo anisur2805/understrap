@@ -5,7 +5,7 @@
  * @package Understrap
  */
 
-if( is_shop() ) {
+if( is_shop() || is_cart() || is_checkout() ) {
 	$understrap_sidebar = 'shop-sidebar';
 } else {
 	$understrap_sidebar = 'right-sidebar';
